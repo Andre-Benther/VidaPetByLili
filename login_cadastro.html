@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>Vida Pet by Lili - Login e Cadastro</title>
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Poppins:400,700&display=swap" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="hero_area ">
+    <!-- header section starts -->
+    <!-- ... (header code from index.html) ... -->
+    <!-- end header section -->
+
+    <!-- login section -->
+    <section class="login_section layout_padding-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 offset-md-3">
+            <div class="login_container">
+              <div class="heading_container">
+                <h2>Login</h2>
+              </div>
+              <div class="login-box">
+				  <h2>Login</h2>
+				  <form action="login.php" method="post">
+					<div class="textbox">
+					  <input type="email" placeholder="Email" name="email" required>
+					</div>
+					<div class="textbox">
+					  <input type="password" placeholder="Senha" name="password" required>
+					</div>
+					<input class="btn" type="submit" value="Entrar">
+				  </form>
+				  <div class="link">
+					<a href="esqueci_senha.php">Esqueci minha senha</a>
+				  </div>
+				</div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end login section -->
+
+    <!-- cadastro section -->
+    <section class="cadastro_section layout_padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 offset-md-3">
+            <div class="cadastro_container">
+              <div class="heading_container">
+                <h2>Cadastro</h2>
+              </div>
+              <form method="post" action="cadastro.php">
+                <div class="form-group">
+                  <input type="text" class="form-control" name="firstName" placeholder="Nome" required>
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" name="lastName" placeholder="Sobrenome" required>
+                </div>
+                <div class="form-group">
+                  <input type="date" class="form-control" name="birthDate" required>
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" name="cpf" placeholder="CPF" required>
+                </div>
+                <div class="form-group">
+                  <input type="email" class="form-control" name="email" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                  <input type="password" class="form-control" name="password" placeholder="Senha" required>
+                </div>
+                <div class="form-group">
+                  <button type="submit" class="btn btn-primary">Cadastrar</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end cadastro section -->
+
+    <!-- ... (rest of the sections from index.html) ... -->
+
+  </div>
+
+  <!-- ... (scripts from index.html) ... -->
+
+</body>
+
+</html>

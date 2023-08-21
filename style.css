@@ -1,0 +1,177 @@
+/* Estilos gerais */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* Estilos para o cabeçalho */
+.app-header {
+    background-color: #ffc107;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.app-header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+/* Estilos para o menu hambúrguer */
+.nav-toggle {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    z-index: 1001;
+    padding: 5px;
+}
+
+.nav-toggle-icon {
+    width: 100%;
+    height: 4px;
+    background-color: #333;
+    transition: background-color 0.3s ease;
+}
+
+/* Estilos para a navegação */
+.app-nav {
+    background-color: #ffc107;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 70%;
+    height: 100%;
+    transition: left 0.3s ease;
+    z-index: 1000;
+    overflow-y: auto;
+    box-shadow: 2px 0px 4px rgba(0, 0, 0, 0.1);
+}
+
+.app-nav.active {
+    left: 0;
+}
+
+.app-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.app-nav ul li {
+    margin-bottom: 20px;
+}
+
+.app-nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-size: 18px;
+}
+
+.app-nav ul li a:hover {
+    color: #333;
+}
+
+/* Estilos para o conteúdo */
+.app-content {
+    padding-top: 80px;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estilos para botões estilizados */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffc107;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: #ff9800;
+}
+
+/* Estilos específicos para cada página */
+.home-content {
+    /* Estilos para a página principal */
+}
+
+.resgate-content {
+    /* Estilos para a página de resgate */
+}
+
+.list-captures-content {
+    /* Estilos para a página de lista de capturas */
+}
+
+.sobre-content {
+    /* Estilos para a página sobre nós */
+}
+
+/* Estilos para dispositivos móveis */
+@media screen and (max-width: 768px) {
+    .app-nav {
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.9);
+    }
+
+    .nav-toggle {
+        padding: 10px;
+    }
+
+    .camera-container {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .buttons-container {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .image-preview {
+        text-align: center;
+    }
+
+    .app-header h1 {
+        font-size: 22px;
+    }
+
+    .app-content {
+        padding-top: 120px;
+    }
+
+    .button {
+        font-size: 14px;
+        margin-top: 15px;
+    }
+}
+#camera-feed {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
